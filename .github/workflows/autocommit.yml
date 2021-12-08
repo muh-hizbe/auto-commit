@@ -7,7 +7,7 @@ on:
       - master
       
   schedule:
-  - cron: "0 7,8,10,11,13 * * *"
+  - cron: "0 0,3 * * *"
 
 jobs:
   auto_commit:
@@ -31,12 +31,9 @@ jobs:
           
           arr[0]="feat: 😂 auto commit"
           arr[1]="feat: 😱 auto commit"
-          arr[2]="feat: 👿 auto commit"
-          arr[3]="feat: 💩 auto commit"
-          arr[4]="feat: 🙏 auto commit"
-          arr[5]="feat: 🙈 auto commit"
-          arr[6]="feat: 🐐 auto commit"
-          arr[7]="feat: 🚀 auto commit"
+          arr[2]="feat: 🤐 auto commit"
+          arr[3]="feat: 🤑 auto commit"
+          arr[4]="feat: 🤗 auto commit"
           
           rand=$[$RANDOM % ${#arr[@]}]
           
