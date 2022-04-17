@@ -27,13 +27,14 @@ jobs:
         run: |
           git config --local user.email "muh.saferagic@gmail.com"
           git config --local user.name "muh-hizbe"
+          git config --global --add safe.directory /github/workspace
           git add -A
           
-          arr[0]="feat: 😂 auto commit"
-          arr[1]="feat: 😱 auto commit"
-          arr[2]="feat: 🤐 auto commit"
-          arr[3]="feat: 🤑 auto commit"
-          arr[4]="feat: 🤗 auto commit"
+          arr[0]="lead: 😂 greening"
+          arr[1]="lead: 😱 make some to be green"
+          arr[2]="lead: 🤐 speakless"
+          arr[3]="lead: 🤑 wow"
+          arr[4]="lead: 🤗 hmmm"
           
           rand=$[$RANDOM % ${#arr[@]}]
           
